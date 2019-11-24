@@ -4,6 +4,7 @@ const path = require('path');
 module.exports = {
   mode: 'spa',
   srcDir: 'app',
+  generate: {dir: 'docs'},
 
   /*
   ** for IntelliJ IDEA / WebStorm
