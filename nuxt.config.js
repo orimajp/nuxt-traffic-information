@@ -39,7 +39,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-//      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ]
   },
 
@@ -60,7 +60,8 @@ module.exports = {
   */
   plugins: [
     '@/plugins/vuetify',
-    '@/plugins/apiRegister'
+    '@/plugins/apiRegister',
+    '@/plugins/vueEasyRefresh'
   ],
 
   buildModules: [
@@ -98,7 +99,8 @@ module.exports = {
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
-          test: /\.(js|vue)$/,
+//          test: /\.(js|vue)$/, // Prettierと矛盾した指摘をするため*.vueに対してESLint側を無効化
+          test: /\.js$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })

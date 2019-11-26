@@ -1,9 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar
-      color="indigo"
-      dark
-      fixed>
+    <v-app-bar color="indigo" dark fixed>
       <v-toolbar-title>運行情報(関東)</v-toolbar-title>
     </v-app-bar>
     <v-content class="content">
@@ -14,8 +11,6 @@
   </v-app>
 </template>
 
-<script>
-</script>
 
 <style scoped>
 .content {

@@ -1,13 +1,7 @@
 <template>
-  <v-row
-    justify="center"
-    align="center">
-    <v-col
-      cols="12"
-      md="8">
-      <Notification
-        :notification="notification"
-      />
+  <v-row justify="center" align="center">
+    <v-col cols="12" md="8">
+      <Notification :notification="notification" />
     </v-col>
   </v-row>
 </template>
