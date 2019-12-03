@@ -1,5 +1,5 @@
 <template>
-  <v-row justify="center" align="center">
+  <v-row justify="center" align="center" id="content">
     <v-col cols="12" md="8">
       <Notification :notification="notification" />
     </v-col>
@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import PullToRefresh from 'pulltorefreshjs'
 import Notification from '@/components/Notification'
 
 export default {
@@ -15,9 +16,24 @@ export default {
   },
   async asyncData({ app }) {
     const notificationInformation = await app.$trafficInformationApi.getNotificationInformation()
-    console.log(notificationInformation)
+//    console.log(notificationInformation)
     return {
       notification: notificationInformation
+    }
+  },
+  mounted() {
+    PullToRefresh.init({
+      mainElement: '#content',
+      onRefresh: this.refreshData
+    })
+  },
+  beforeDestroy() {
+    PullToRefresh.destroyAll()
+  },
+  methods: {
+    async refreshData() {
+//      console.log('refreshData() called.')
+      this.notification = await this.$trafficInformationApi.getNotificationInformation()
     }
   }
 }
