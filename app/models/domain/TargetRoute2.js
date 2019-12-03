@@ -872,7 +872,7 @@ class TargetRoute {
   constructor(company, name, webSite) {
     this.company = company
     this.name = name
-    this.webSite = webSite
+    this.website = webSite
   }
 }
 
