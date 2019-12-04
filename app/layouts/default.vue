@@ -11,7 +11,6 @@
   </v-app>
 </template>
 
-
 <style scoped>
 .content {
   margin-top: 50px;

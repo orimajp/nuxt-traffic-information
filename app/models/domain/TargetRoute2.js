@@ -106,10 +106,10 @@ const targetRoutes = [
         name: '中央･総武各駅停車',
         webSite: 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
       },
-      {
-        name: '武蔵野線',
-        webSite: 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
-      },
+      //{
+      //  name: '武蔵野線',
+      //  webSite: 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
+      //},
       {
         name: '五日市線',
         webSite: 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
@@ -156,18 +156,18 @@ const targetRoutes = [
         name: '総武本線',
         webSite: 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
       },
-      {
-        name: '中央・総武各駅停車',
-        webSite: 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
-      },
+      //{
+      //  name: '中央・総武各駅停車',
+      //  webSite: 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
+      //},
       {
         name: '京葉線',
         webSite: 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
       },
-      {
-        name: '武蔵野線',
-        webSite: 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
-      },
+      //{
+      //  name: '武蔵野線',
+      //  webSite: 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'
+      //},
       {
         name: '内房線',
         webSite: 'https://traininfo.jreast.co.jp/train_info/kanto.aspx'

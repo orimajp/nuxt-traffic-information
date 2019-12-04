@@ -16,7 +16,6 @@ export default {
   },
   async asyncData({ app }) {
     const notificationInformation = await app.$trafficInformationApi.getNotificationInformation()
-//    console.log(notificationInformation)
     return {
       notification: notificationInformation
     }
@@ -32,7 +31,6 @@ export default {
   },
   methods: {
     async refreshData() {
-//      console.log('refreshData() called.')
       this.notification = await this.$trafficInformationApi.getNotificationInformation()
     }
   }

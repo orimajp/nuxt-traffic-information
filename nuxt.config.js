@@ -1,17 +1,10 @@
 const pkg = require('./package')
 const path = require('path');
 
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/nuxt-traffic-information/'
-  }
-} : {}
-
 module.exports = {
   mode: 'spa',
   srcDir: 'app',
   generate: {dir: 'docs'},
-  ...routerBase,
 
   /*
   ** for IntelliJ IDEA / WebStorm
@@ -60,8 +53,7 @@ module.exports = {
   */
   plugins: [
     '@/plugins/vuetify',
-    '@/plugins/apiRegister',
-    '@/plugins/vueEasyRefresh'
+    '@/plugins/apiRegister'
   ],
 
   buildModules: [
