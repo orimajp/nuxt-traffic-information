@@ -1,4 +1,4 @@
-import getTargetRoute from '@/models/domain/TargetRoute2'
+import getTargetRoute from '@/models/domain/TargetRoute'
 import TrafficInformation from '@/models/domain/TrafficInformation'
 
 function createTrafficInformation(source) {
