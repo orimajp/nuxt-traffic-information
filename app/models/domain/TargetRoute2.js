@@ -821,7 +821,7 @@ const targetRoutes = [
     company: '鹿島臨海鉄道',
     routes: [
       {
-        name: '銚子電気鉄道線',
+        name: '大洗鹿島線',
         webSite: 'https://www.rintetsu.co.jp/'
       }
     ]
